@@ -2,7 +2,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - '**'
+      - main
 jobs:
   build:
     name: Build
@@ -64,4 +64,4 @@ jobs:
           file_path: artifact/similarity/build/distributions/similarity.tar
           extract_dir: dist
       - name: Test Similarity
-        run: scripts/e2e-integration-test.sh 
+        run: scripts/e2e-integration-test.sh
